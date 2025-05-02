@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>МОТОРИНО РФ — Контрактные запчасти и двигатели G4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0d1b2a;
+      color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+    header p {
+      color: #a0a0a0;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #e63946;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #e63946;
+      margin-bottom: 40px;
+    }
+    .products, .advantages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .form {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255,255,255,0.1);
+      color: white;
+    }
+    button {
+      background: #e63946;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #d62828;
+    }
+    footer {
+      background: #1b263b;
+      text-align: center;
+      padding: 30px;
+      color: #a0a0a0;
+      margin-top: 60px;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>МОТОРИНО РФ</h1>
+  <p>Контрактные запчасти и двигатели G4 для корейских авто</p>
+  <nav>
+    <a href="#about">О нас</a>
+    <a href="#products">Запчасти</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<section id="about" class="fade-in">
+  <h2>О компании</h2>
+  <p style="text-align:center; max-width: 800px; margin: auto;">
+    МОТОРИНО РФ — надежный поставщик контрактных запчастей и новых двигателей G4. Мы гарантируем качество, быструю доставку и проверку каждой позиции перед отправкой.
+  </p>
+</section>
+
+<section id="products" class="fade-in">
+  <h2>Наш ассортимент</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://www.bimmerworld.com/images/engine.png" alt="Двигатель" />
+      <h3>Контрактные двигатели</h3>
+      <p>Проверенные моторы с гарантией</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn11.bigcommerce.com/s-rvmd6/images/stencil/1280x1280/products/1527/2276/Automatic-Transmission__82955.1608855242.png" alt="КПП" />
+      <h3>Коробки передач</h3>
+      <p>АКПП и МКПП в наличии</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn.shopify.com/s/files/1/0267/9737/7326/products/alternator.png" alt="Навесное" />
+      <h3>Навесное оборудование</h3>
+      <p>Генераторы, стартеры и другое</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ebayimg.com/images/g/XDMAAOSwED5i3n7b/s-l1600.jpg" alt="Кузовные элементы" />
+      <h3>Кузовные элементы</h3>
+      <p>Капоты, двери, бампера</p>
+    </div>
+    <div class="card">
+      <img src="https://www.hyundaiengines.com/image/cache/catalog/engines/Hyundai%20G4GC%202.0L-800x800.jpg" alt="Двигатель G4" />
+      <h3>Новые двигатели G4</h3>
+      <p>Для Hyundai и Kia</p>
+    </div>
+  </div>
+</section>
+
+<section id="advantages" class="fade-in">
+  <h2>Наши преимущества</h2>
+  <div class="advantages">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Гарантия" />
+      <h3>Гарантия до 30 дней</h3>
+      <p>На все агрегаты</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/633/633759.png" alt="Доставка" />
+      <h3>Доставка по РФ</h3>
+      <p>ТК и самовывоз</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1198/1198296.png" alt="Проверка" />
+      <h3>Проверка перед отправкой</h3>
+      <p>Фото и видео отчёт</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Цены" />
+      <h3>Честные цены</h3>
+      <p>Без скрытых доплат</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="fade-in">
+  <h2>Оставить заявку</h2>
+  <div class="form">
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <textarea placeholder="Какая запчасть вас интересует?" rows="4" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>МОТОРИНО РФ © 2025 | Контрактные запчасти и двигатели G4</p>
+  <p>+7 (___) ___-__-__ | WhatsApp | Telegram</p>
+</footer>
+
+</body>
+</html>
